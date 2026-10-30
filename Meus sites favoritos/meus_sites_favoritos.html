@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meus Sites Favoritos</title>
+
+    <style>
+        /* Configurações gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #123c69, #2874a6);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        /* Conteúdo principal */
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #123c69;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #2874a6;
+            padding-bottom: 8px;
+        }
+
+        .introducao {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        /* Galeria de sites */
+        .galeria {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .site {
+            background-color: white;
+            text-align: center;
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+            transition: transform 0.3s;
+        }
+
+        .site:hover {
+            transform: translateY(-6px);
+        }
+
+        .site h1 {
+            font-size: 22px;
+            color: #123c69;
+            margin-bottom: 12px;
+        }
+
+        .site img {
+            width: 100%;
+            max-width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto 15px;
+        }
+
+        .site a {
+            display: inline-block;
+            background-color: #2874a6;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .site a:hover {
+            background-color: #123c69;
+        }
+
+        /* Conclusão */
+        .conclusao {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #123c69;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            main {
+                padding: 12px;
+            }
+
+            .site img {
+                height: 190px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Meus Sites Favoritos</h1>
+        <p>Trabalho Escolar - Desenvolvimento Web</p>
+        <p><strong>Aluno:</strong> Marcelino Dias de Oliveira</p>
+        <p><strong>Ano/Série:</strong> [Digite sua série]</p>
+    </header>
+
+    <main>
+
+        <!-- TÍTULO PRINCIPAL -->
+        <section>
+            <h2>Meus sites favoritos: Marcelino Dias de Oliveira</h2>
+
+            <div class="introducao">
+                <p>
+                    A internet faz parte do nosso cotidiano e oferece
+                    diversas ferramentas para estudar, pesquisar,
+                    aprender, trabalhar e se divertir.
+                </p>
+
+                <p>
+                    Neste trabalho, apresento cinco dos meus sites
+                    favoritos, explicando um pouco sobre cada um deles
+                    e mostrando seus respectivos links de acesso.
+                    Esses sites são úteis para diferentes atividades
+                    do dia a dia.
+                </p>
+            </div>
+        </section>
+
+        <!-- DESENVOLVIMENTO -->
+        <section>
+            <h2>Conheça meus cinco sites favoritos</h2>
+
+            <div class="galeria">
+
+                <!-- SITE 1 -->
+                <div class="site">
+                    <h1>1. Google</h1>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+                        alt="Pessoa utilizando computador para pesquisar na internet">
+
+                    <p>
+                        O Google é uma ferramenta de pesquisa que
+                        permite encontrar informações, imagens,
+                        notícias e conteúdos educativos.
+                    </p>
+
+                    <br>
+
+                    <a href="https://www.google.com"
+                       target="_blank" rel="noopener noreferrer">
+                        Acessar Google
+                    </a>
+                </div>
+
+                <!-- SITE 2 -->
+                <div class="site">
+                    <h1>2. YouTube</h1>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=600"
+                        alt="Equipamentos utilizados para produção de vídeos">
+
+                    <p>
+                        O YouTube é uma plataforma de vídeos onde
+                        podemos assistir a aulas, tutoriais,
+                        documentários e conteúdos de entretenimento.
+                    </p>
+
+                    <br>
+
+                    <a href="https://www.youtube.com"
+                       target="_blank" rel="noopener noreferrer">
+                        Acessar YouTube
+                    </a>
+                </div>
+
+                <!-- SITE 3 -->
+                <div class="site">
+                    <h1>3. Wikipedia</h1>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600"
+                        alt="Estantes de biblioteca com livros para pesquisa e conhecimento">
+
+                    <p>
+                        A Wikipédia é uma enciclopédia online
+                        que oferece informações sobre diversos
+                        assuntos e conhecimentos gerais.
+                    </p>
+
+                    <br>
+
+                    <a href="https://www.wikipedia.org"
+                       target="_blank" rel="noopener noreferrer">
+                        Acessar Wikipedia
+                    </a>
+                </div>
+
+                <!-- SITE 4 -->
+                <div class="site">
+                    <h1>4. Instagram</h1>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+                        alt="Pessoa utilizando tecnologia para acessar redes sociais">
+
+                    <p>
+                        O Instagram é uma rede social utilizada
+                        para compartilhar fotos, vídeos,
+                        mensagens e acompanhar outras pessoas.
+                    </p>
+
+                    <br>
+
+                    <a href="https://www.instagram.com"
+                       target="_blank" rel="noopener noreferrer">
+                        Acessar Instagram
+                    </a>
+                </div>
+
+                <!-- SITE 5 -->
+                <div class="site">
+                    <h1>5. W3Schools</h1>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+                        alt="Computador com ambiente de desenvolvimento e programação">
+
+                    <p>
+                        O W3Schools é um site educativo que ensina
+                        programação e desenvolvimento web,
+                        incluindo HTML, CSS e JavaScript.
+                    </p>
+
+                    <br>
+
+                    <a href="https://www.w3schools.com"
+                       target="_blank" rel="noopener noreferrer">
+                        Acessar W3Schools
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONCLUSÃO -->
+        <section>
+            <h2>Conclusão</h2>
+
+            <div class="conclusao">
+                <p>
+                    Com este trabalho, foi possível conhecer melhor
+                    alguns sites importantes e entender como a
+                    internet pode contribuir para a educação,
+                    comunicação, pesquisa e entretenimento.
+                </p>
+
+                <p>
+                    Também foi possível praticar conceitos de
+                    desenvolvimento web utilizando HTML5 e CSS3,
+                    como títulos, parágrafos, imagens, links,
+                    cores e organização de conteúdo.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Trabalho Escolar - Meus Sites Favoritos</p>
+        <p>Desenvolvido por Marcelino Dias de Oliveira - 2026</p>
+    </footer>
+
+</body>
+</html>
