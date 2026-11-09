@@ -1,0 +1,101 @@
+/* =========================================================
+   Folha de estilo principal — Meu Portal de Entreterimento Digital
+   ========================================================= */
+
+/* Container principal: Flexbox organiza as três colunas lado a lado */
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cada coluna ocupa espaço igual e se ajusta em telas menores */
+.coluna {
+  flex: 1 1 300px;
+  background-color: #1f2937;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo comum para os títulos das colunas,
+   usando agrupamento de seletores para evitar repetição */
+h1.titulo-coluna,
+h2.titulo-coluna {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #facc15;
+}
+
+/* Estilos diferentes para cada seção, usando IDs */
+
+/* Filmes e Séries — tema terror */
+#filmes-series {
+  border-top: 6px solid #dc2626;
+}
+
+#filmes-series .titulo-coluna {
+  color: #f87171;
+}
+
+/* Música e Podcasts — tema rock */
+#musica-podcasts {
+  border-top: 6px solid #f97316;
+}
+
+#musica-podcasts .titulo-coluna {
+  color: #fdba74;
+}
+
+/* Games e Tecnologia — tema ação */
+#games-tecnologia {
+  border-top: 6px solid #3b82f6;
+}
+
+#games-tecnologia .titulo-coluna {
+  color: #93c5fd;
+}
+
+/* Estilo comum das imagens */
+.imagem {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Card que envolve cada imagem e legenda */
+.card-imagem {
+  background-color: #111827;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Texto explicativo das colunas */
+.coluna p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  padding: 20px;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* Ajuste para telas menores: as colunas ficam empilhadas */
+@media (max-width: 900px) {
+  .container-flex {
+    flex-direction: column;
+  }
+}

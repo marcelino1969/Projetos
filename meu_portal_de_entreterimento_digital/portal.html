@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título da aba do navegador -->
+  <title>Meu Portal de Entreterimento Digital</title>
+
+  <!-- CSS Reset: deve vir antes da folha de estilo principal -->
+  <link rel="stylesheet" href="reset.css">
+
+  <!-- CSS Externo principal -->
+  <link rel="stylesheet" href="estilo.css">
+
+  <!-- CSS Interno -->
+  <style>
+    /* Estilo interno: ajustes específicos desta página */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #111827;
+      color: #f9fafb;
+    }
+
+    .titulo-principal {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 30px 0;
+      color: #facc15;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    /* Agrupamento de seletores: estilos comuns aos títulos das colunas */
+    h1, h2 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    /* Estilo aplicado às legendas das imagens */
+    .legenda-imagem {
+      font-size: 0.85rem;
+      color: #d1d5db;
+      margin-top: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="titulo-principal">Meu Portal de Entreterimento Digital</h1>
+  </header>
+
+  <!-- Container Flexbox com as três colunas -->
+  <main class="container-flex">
+
+    <!-- Coluna 1: Filmes e Séries -->
+    <section id="filmes-series" class="coluna">
+      <h1 class="titulo-coluna">Filmes e Séries</h1>
+      <p>Esta seção reúne recomendações de filmes e séries de terror, com histórias de suspense, mistério e sustos.</p>
+
+      <figure class="card-imagem">
+        <img src="imagens/filme1.jpg" alt="Cena de filme de terror" class="imagem">
+        <figcaption class="legenda-imagem">Filme de terror — Foto: Unsplash</figcaption>
+      </figure>
+
+      <figure class="card-imagem">
+        <img src="imagens/filme2.jpg" alt="Série de suspense" class="imagem">
+        <figcaption class="legenda-imagem">Série de suspense — Foto: Unsplash</figcaption>
+      </figure>
+
+      <figure class="card-imagem">
+        <img src="imagens/filme3.jpg" alt="Cinema e terror" class="imagem">
+        <figcaption class="legenda-imagem">Cinema de terror — Foto: Unsplash</figcaption>
+      </figure>
+    </section>
+
+    <!-- Coluna 2: Música e Podcasts -->
+    <section id="musica-podcasts" class="coluna">
+      <h1 class="titulo-coluna">Música e Podcasts</h1>
+      <p>Aqui estão dicas de rock, bandas, álbuns e podcasts para quem gosta de música e conversas sobre cultura.</p>
+
+      <figure class="card-imagem">
+        <img src="imagens/musica1.jpg" alt="Guitarra de rock" class="imagem">
+        <figcaption class="legenda-imagem">Guitarra de rock — Foto: Unsplash</figcaption>
+      </figure>
+
+      <figure class="card-imagem">
+        <img src="imagens/musica2.jpg" alt="Show de rock" class="imagem">
+        <figcaption class="legenda-imagem">Show de rock — Foto: Unsplash</figcaption>
+      </figure>
+
+      <figure class="card-imagem">
+        <img src="imagens/podcast.jpg" alt="Microfone de podcast" class="imagem">
+        <figcaption class="legenda-imagem">Estúdio de podcast — Foto: Unsplash</figcaption>
+      </figure>
+    </section>
+
+    <!-- Coluna 3: Games e Tecnologia -->
+    <section id="games-tecnologia" class="coluna">
+      <h1 class="titulo-coluna">Games e Tecnologia</h1>
+      <p>Esta coluna traz jogos de ação, consoles, computadores e novidades do mundo da tecnologia.</p>
+
+      <figure class="card-imagem">
+        <img src="imagens/game1.jpg" alt="Controle de videogame" class="imagem">
+        <figcaption class="legenda-imagem">Controle de videogame — Foto: Unsplash</figcaption>
+      </figure>
+
+      <figure class="card-imagem">
+        <img src="imagens/game2.jpg" alt="Jogo de ação" class="imagem">
+        <figcaption class="legenda-imagem">Jogo de ação — Foto: Unsplash</figcaption>
+      </figure>
+
+      <figure class="card-imagem">
+        <img src="imagens/tecnologia.jpg" alt="Tecnologia e computador gamer" class="imagem">
+        <figcaption class="legenda-imagem">Tecnologia gamer — Foto: Unsplash</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Imagens ilustrativas obtidas no Unsplash. Créditos: Unsplash.</p>
+  </footer>
+
+</body>
+</html>
